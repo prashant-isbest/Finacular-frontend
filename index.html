@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleright.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="heading">
+        <img src="" alt="" />
+        <h4>Finacular</h4>
+        <button class="hide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+      <div class="buttons">
+        <button>
+          <i class="fas fa-th-large"></i>
+          Dashboard
+        </button>
+        <button>
+          <i class="fas fa-chart-pie"></i>
+          Assets
+        </button>
+        <button>
+          <i class="fas fa-chart-bar"></i>
+          Tracker
+        </button>
+        <button>
+          <i class="fas fa-calendar-alt"></i>
+          Planning
+        </button>
+      </div>
+      <div class="footer">
+        <img src="./dummy-profile.png" alt="" />
+        Vandana M
+        <button>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="main-header">
+        <button>
+          <i class="fas fa-cog"></i>
+        </button>
+        <button>
+          <i class="fas fa-bell"></i>
+        </button>
+      </div>
+      <div class="wrap1">
+        <div class="chart"></div>
+        <div class="info">
+          <div class="card">
+            <div class="card-header">
+              <h5>Assets Balance</h5>
+              <button>
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+            <div class="card-content">
+              <form action="">
+                <label for="assetBalance">Enter amount</label>
+                <br />
+                <input type="text" id="assetBalance" />
+              </form>
+              <p>
+                Last Updated
+                <span class="lastupdate">3 dec</span>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header color2">
+              <h5>Growth Rate</h5>
+              <button>
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+            <div class="card-content">
+              <form action="">
+                <label for="growthRate">Enter Growth Rate</label>
+                <br />
+                <input type="text" id="growthRate" />
+              </form>
+              <p>
+                Inflation
+                <span class="lastupdate">6%</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card majorinv">
+            <div class="card-header">
+              <h5>Growth Rate</h5>
+              <button>
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+            <div class="card-content">
+              <!-- <form action="">
+                <label for="returns">Returns generated per month</label>
+                <br />
+                <input type="text" id="returns" />
+              </form> -->
+              <p>Returns generated per month</p>
+              <p id="returns">₹ 125,000</p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h5>Financial Independence</h5>
+              <button>
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+            <div class="card-content">
+              <!-- <form action="">
+                <label for="age">Age</label>
+                <br />
+                <input type="text" disabled id="age" />
+              </form> -->
+              <p>Age</p>
+              <p id="age">45 years</p>
+              <p>
+                optimized
+                <span class="optimized">
+                  <button class="on">Yes</button>
+                  <button>No</button>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header color2">
+              <h5>Average Expense</h5>
+              <button>
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+            <div class="card-content">
+              <!-- <form action="">
+                <label for="averagExpense">Amount</label>
+                <br />
+                <input
+                  type="text"
+                  placeholder="25000"
+                  disabled
+                  id="averagExpense"
+                />
+              </form> -->
+              <p>Amount</p>
+              <p id="amount">₹ 25,000</p>
+              <p>
+                3 months Average
+                <span class="inflation">₹ 40,000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right">
+      <div class="header">
+        <button class="btn-right">
+          <i class="fas fa-bolt"></i>
+          Actions
+        </button>
+      </div>
+      <div class="wrap-right-content">
+        <div class="rightcard1">
+          <img src="./newcompounding.png" alt="" />
+          <p>Understanding the power of compounding</p>
+          <button>Learn Now</button>
+        </div>
+        <div class="rightcard2">
+          <img src="./rightimage2.PNG" alt="" />
+          <p>Track all your experienc on daily basis</p>
+          <button>Track Now</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

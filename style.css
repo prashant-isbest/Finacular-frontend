@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  margin: 0px;
+  font-family: Mulish, 'sans-serif';
+  grid-auto-rows: 100vh;
+}
+
+/* experimental */
+
+.sidebar hidden {
+}
+
+.sidebar {
+  background-color: #fff;
+
+  font-family: inherit;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hide {
+  margin: 1rem 0.5rem;
+  background: transparent;
+  font-size: 20px;
+  border: 0;
+}
+.hide:active {
+  outline: none;
+}
+
+.sidebar .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  position: fixed;
+  bottom: 30px;
+  width: 15%;
+}
+
+.sidebar .footer img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 0px;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
+}
+.sidebar .buttons button {
+  width: 100%;
+  color: inherit;
+  background: transparent;
+  height: 3rem;
+  margin: 0;
+  font-size: 16px;
+  border: none;
+  text-align: left;
+}
+
+.sidebar .buttons button i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.buttons button:hover {
+  background-color: #01048a;
+  color: white;
+}
+
+.main-content {
+  background-color: #fdfafd;
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar-right .header {
+  text-align: center;
+  border: 1px solid #cdd4dc;
+  padding-bottom: 9px;
+}
+
+.sidebar-right .btn-right {
+  margin-top: 5px;
+  font-size: 18px;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+.sidebar-right .btn-right:hover {
+  cursor: pointer;
+}
+
+.sidebar-right button {
+  background-color: #01048a;
+  color: white;
+}
+
+.main-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #cdd4dc;
+}
+.main-header button {
+  font-family: Mulish, 'sans-serif';
+  padding: 18px;
+  border-right: 0px;
+  border: 1px solid #cdd4dc;
+  color: grey;
+  background: transparent;
+}
+
+.main-header button:focus {
+  outline: none;
+}
+
+.main-header button:hover {
+  background-color: #01048a;
+  color: white;
+}
+
+/* .wrap1 {
+  margin: auto auto;
+  height: 90vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: auto;
+}
+
+.chart {
+  width: 1200px;
+  height: 450px;
+  background-color: grey;
+  margin: 25px 0 25px 0;
+}
+
+.info {
+  height: 350px;
+  width: 1200px;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourinfo {
+  width: 600px;
+  height: 350px;
+  background-color: honeydew;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.majorinv {
+  background-color: indianred;
+  width: 300px;
+}
+
+.fourinfo .card {
+  width: 280px;
+  height: 150px;
+  background-color: lemonchiffon;
+} */
+
+.wrap1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fdfafd;
+  border: 2px solid blue;
+}
+
+.chart {
+  background-color: grey;
+  width: 90%;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.info {
+  width: 90%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(170px, auto);
+  grid-gap: 1rem;
+}
+
+.info > div {
+  /* background-color: #eee; */
+  background-color: #fff;
+}
+
+.majorinv {
+  grid-column: 3;
+  grid-row: 1/3;
+}
+
+.info .card {
+  border-radius: 3px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cdd4dc;
+  margin: 0;
+}
+.card-header h5 {
+  margin-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 17px;
+  display: inline;
+}
+.card-header button {
+  color: grey;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.card-header button:hover {
+  color: black;
+}
+
+.card-content form {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+.card-content input {
+  background-color: #e7e8f2;
+  color: #01048a;
+  padding: 5px;
+  width: 100px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+}
+
+.card-content p {
+  margin-left: 15px;
+}
+.card-content p span {
+  margin-left: 10px;
+  color: #aaa;
+}
+
+.optimized button {
+  border-radius: 2px;
+  border: 0;
+  outline: none;
+}
+.optimized button:active {
+  border: 0;
+  background-color: #01048a;
+  color: white;
+  outline: 0;
+}
+
+.card .card-header h5 {
+  color: #01048a;
+}
+
+.card .card-header.color2 h5 {
+  color: #1ba9ea;
+}
+
+#growthRate {
+  border: 1px solid #1ba9ea;
+  color: #1ba9ea;
+  background-color: transparent;
+  width: 50px;
+}
+
+input:disabled {
+  background-color: transparent;
+}
+
+#age {
+  color: #01048a;
+  font-weight: bold;
+}
+
+#amount {
+  color: #1ba9ea;
+  font-weight: bold;
+}
+
+#returns {
+  color: #01048a;
+  font-weight: bold;
+}
