@@ -14,8 +14,10 @@ body {
 /* experimental */
 
 .sidebar hidden {
+  transition: translateX(-100%);
 }
 
+/*  experimental */
 .sidebar {
   background-color: #fff;
 
@@ -132,53 +134,6 @@ body {
   color: white;
 }
 
-/* .wrap1 {
-  margin: auto auto;
-  height: 90vh;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: auto;
-}
-
-.chart {
-  width: 1200px;
-  height: 450px;
-  background-color: grey;
-  margin: 25px 0 25px 0;
-}
-
-.info {
-  height: 350px;
-  width: 1200px;
-  background-color: orange;
-  display: flex;
-  justify-content: space-between;
-}
-
-.fourinfo {
-  width: 600px;
-  height: 350px;
-  background-color: honeydew;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.majorinv {
-  background-color: indianred;
-  width: 300px;
-}
-
-.fourinfo .card {
-  width: 280px;
-  height: 150px;
-  background-color: lemonchiffon;
-} */
-
 .wrap1 {
   display: flex;
   flex-direction: column;
@@ -200,11 +155,12 @@ body {
 
 .info {
   width: 90%;
-  background-color: black;
+  background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(170px, auto);
   grid-gap: 1rem;
+  margin-bottom: 15px;
 }
 
 .info > div {
